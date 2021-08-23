@@ -712,6 +712,14 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.image-main-shane {
+			display: flex;
+			justify-content: center;
+			margin: 2rem auto;
+		}
+
+
+
 			.image.main img {
 				width: 100%;
 			}
@@ -719,7 +727,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.image.main {
-				margin: 2rem 0;
+				margin: 2rem;
 			}
 
 		}
