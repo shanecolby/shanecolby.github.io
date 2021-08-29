@@ -152,13 +152,14 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+		/* border-bottom: dotted 1px rgba(255, 255, 255, 0.5); */
+		font-weight: 900;
 		text-decoration: none;
 		color: inherit;
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
+		a:hover {;
+			border-bottom: solid 1px gray;
 		}
 
 	strong, b {
@@ -726,7 +727,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.image.main {
+			.image.main, .image-main-shane {
 				margin: 2rem;
 			}
 
@@ -734,8 +735,8 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			.image.main {
-				margin: 1.5rem 0;
+			.image.main, .image-main-shane {
+				margin: 1rem 0;
 			}
 
 		}
@@ -789,6 +790,21 @@ input, select, textarea {
 
 		dl dd {
 			margin-left: 2rem;
+		}
+
+		#bioPageLink {
+			margin: 0;
+			font-weight: 900;
+		}
+
+		.project-list {
+			padding-top: 1em;
+			border-top: 2px dotted gray;
+		
+		}
+
+		#projectLabel {
+			font-size: 1.75em;
 		}
 
 /* Actions */
